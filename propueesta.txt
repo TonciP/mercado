@@ -1,0 +1,20 @@
+UID
+
+
+ver la manera de usar un midellware
+para mandar el token con los roles y permisos de usuario
+
+django rest premission
+
+
+se podria hacer un tabla con base usuario
+con los datos que necesites.
+
+
+simple JWT
+codear y encodear
+ ver la manera de construir con simple token personalizado
+tiene que ser el mismo secret para los tres sistemas
+
+TOKEN USER CLASS
+

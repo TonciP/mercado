@@ -1,0 +1,32 @@
+var express = require('express');
+var app = express();
+var session = require('express-session');
+let http = require("http").createServer(app);
+
+var auth = function(req, res, next) {
+    if (req.session && req.session.user === "jose" && req.session.admin)
+      return next();
+    else
+      return res.sendStatus(401);
+  };
+
+  app.get('/login', function (req, res) {
+    if (!req.query.username || !req.query.password) {
+      res.send('login failed');
+    } else if(req.query.username === "jose" || req.query.password === "hunter2") {
+      req.session.user = "jose";
+      req.session.admin = true;
+    }
+  });
+
+  app.get('/logout', function (req, res) {
+    req.session.destroy();
+  });
+
+  app.get('/content', auth, function (req, res) {
+    res.send("You can only see this after you've logged in.");
+});
+
+http.listen(3000, "0.0.0.0", () => {
+    console.log("listening on *:3000");
+  });

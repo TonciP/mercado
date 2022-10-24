@@ -1,0 +1,10 @@
+    let permiso = permisos.map( item => {
+      return {
+        id: item.id,
+        rol: item.rol
+      };
+    });
+    let listpermisos = [];
+    permiso.forEach(element => {
+      listpermisos.push(element.rol);
+    });

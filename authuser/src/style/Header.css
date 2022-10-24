@@ -1,0 +1,31 @@
+.brand-image{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("https://assets.challonge.com/assets/logo_challonge_dark-af38d9c1e7a68f570ce101645299caa8144ba2bf6abff0b5541f5d43f4d77b15.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 156px;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -moz-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+#content-header{
+    background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+    height: 300px;
+}
+#content-header-card{
+    margin-top: -100px;
+    background: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(30px);
+}

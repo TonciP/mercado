@@ -1,0 +1,180 @@
+.content-page{
+    position: relative;
+    float: right;
+    width: calc(100% - 260px);
+}
+header{
+    background: #06357a;
+    height: 100px;
+    border-radius: 100px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+}
+.titulo-segundario{
+    text-align: center;
+    color: white;
+}
+#header-page{
+    position: relative;
+    background: #06357a;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.page{
+    margin: 0px 20px;
+}
+#title-option{
+text-align: center;
+color: white;
+padding: 10px;
+}
+#tabla-evaluados{
+    padding: 10px;
+}
+#tpersonas thead tr th,
+#tpersonas tbody tr td{
+    text-align: center;
+    align-items: center;
+}
+
+#tevaluados thead tr th,
+#tevaluados tbody tr td{
+    text-align: center;
+    align-items: center;
+}
+
+select:focus + .focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid var(--select-focus);
+    border-radius: inherit;
+  }
+
+  .option:focus{
+    background: black;
+  }
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.content-load{
+    display: flex;
+    justify-content: center;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #084298;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #084298 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    overflow: auto;
+    background: sienna;
+    justify-content: center;
+}
+.imgheader img{
+    width: 200px;
+    height: 150px;
+}
+.imgheader{
+    margin: 20px auto;
+    padding-bottom: 10px;
+    border-bottom: white solid 2px;
+}
+.contenedor-menu{
+    display: block;
+
+}
+.lista-menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+.lista-menu li a:hover{
+    background: grey;
+}
+.lista-menu li{
+    list-style: none;
+    margin: 20px 0px;
+}
+.lista-menu{
+    display: contents;
+    justify-content: center;
+}
+.opciones-menu{
+    text-align: center;
+}
+.titulo-principal h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+.titulo-principal{
+    text-align: center;
+    color: white;
+}
+
+
+
+/* body{
+    background-image: url("https://assets.challonge.com/assets/landing-bg-f092126b5d586e7cbdc3c5f709534b00af46ef5ef6ab5a5aa29b50aca4e8e0e1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#title h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#title p{
+    margin-top: 30px;
+    font-size: 30px;
+    
+}
+
+.content-btn a{
+    height: 50px;
+    color: white;
+    font-size: 20px;
+} */
